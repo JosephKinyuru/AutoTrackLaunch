@@ -23,14 +23,6 @@ export default function CarPage({ cars }) {
 
     }
 
-    function navigateToPaypal() {
-        useEffect(() => {
-            navigate('/payment')
-
-
-        }, [])
-    }
-
 
     return (
         <div className="allDetailsSN">
@@ -70,7 +62,7 @@ export default function CarPage({ cars }) {
             </Row>
             <Row>
                 <Col>
-                    <button onClick={navigateToPaypal()} className="buyBtnSN">Buy Now</button>
+                    <button onClick={() => navigate('/payment')} className="buyBtnSN">Buy Now</button>
                 </Col>
             </Row>
 
